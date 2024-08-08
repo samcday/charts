@@ -1,0 +1,28 @@
+apiVersion: v1
+entries:
+  vertical-pod-autoscaler:
+  - annotations:
+      kubeVersion: '>=1.24'
+    apiVersion: v2
+    appVersion: 1.1.2
+    created: "2024-08-08T11:25:00.988436269Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami/
+      version: 2.19.1
+    description: Set of components that automatically adjust the amount of CPU and
+      memory requested by pods running in the Kubernetes Cluster
+    digest: 2ffdcae3246eff403794b66e452c352dbb74c26f57b8f232667d61b90456638e
+    home: https://github.com/kubernetes/autoscaler
+    icon: https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg
+    maintainers:
+    - email: sebastien.prudhomme@gmail.com
+      name: sebastien-prudhomme
+    name: vertical-pod-autoscaler
+    sources:
+    - https://github.com/kubernetes/autoscaler
+    - https://github.com/samcday/charts/tree/main/charts/vertical-pod-autoscaler
+    urls:
+    - https://github.com/samcday/charts/releases/download/vertical-pod-autoscaler-0.0.1/vertical-pod-autoscaler-0.0.1.tgz
+    version: 0.0.1
+generated: "2024-08-08T11:25:00.988447189Z"
