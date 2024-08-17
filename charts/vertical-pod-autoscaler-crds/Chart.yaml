@@ -1,0 +1,4 @@
+apiVersion: v2
+name: vertical-pod-autoscaler-crds
+description: vertical-pod-autoscaler CRDs
+version: 1.0.0
