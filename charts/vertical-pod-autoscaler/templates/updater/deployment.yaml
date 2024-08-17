@@ -62,8 +62,6 @@ spec:
             - --{{ $key }}={{ $value }}
             {{- end }}
           env:
-            - name: NAMESPACE
-              value: {{ .Release.Namespace }}
             {{- if .Values.updater.extraEnvVars }}
             {{- include "common.tplvalues.render" (dict "value" .Values.updater.extraEnvVars "context" $) | nindent 12 }}
             {{- end }}
