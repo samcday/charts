@@ -1,3 +1,4 @@
+{{- if .Values.recommender.enabled }}
 {{- if .Values.recommender.pdb.create }}
 apiVersion: {{ include "common.capabilities.policy.apiVersion" . }}
 kind: PodDisruptionBudget
@@ -22,4 +23,5 @@ spec:
   selector:
     matchLabels:
       {{- include "vertical-pod-autoscaler.recommender.selectorLabels" . | nindent 6 }}
+{{- end }}
 {{- end }}

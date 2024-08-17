@@ -301,7 +301,9 @@ admissionController:
 ## @section Recommender parameters
 
 recommender:
-## @param recommender.replicaCount Number of replicas
+  enabled: true
+
+  ## @param recommender.replicaCount Number of replicas
   replicaCount: 1
 
   image:
@@ -800,6 +802,7 @@ updater:
 ## @section CRDs parameters
 
 crds:
+  enabled: true
   image:
     ## @param crds.image.registry Image registry
     registry: docker.io

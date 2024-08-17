@@ -1,3 +1,4 @@
+{{- if .Values.recommender.enabled }}
 {{- if .Values.recommender.metrics.serviceMonitor.enabled -}}
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
@@ -45,3 +46,4 @@ spec:
     matchLabels:
       {{- include "vertical-pod-autoscaler.recommender.selectorLabels" . | nindent 6 }}
 {{- end -}}
+{{- end }}
