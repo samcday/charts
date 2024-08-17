@@ -67,6 +67,7 @@ spec:
             - --client-ca-file=/tls-secret/ca.crt
             - --tls-cert-file=/tls-secret/tls.crt
             - --tls-private-key=/tls-secret/tls.key
+            - --webhook-service={{ include "vertical-pod-autoscaler.admissionController.fullname" . }}
             {{- range $key, $value := .Values.admissionController.extraArgs }}
             - --{{ $key }}={{ $value }}
             {{- end }}
