@@ -25,4 +25,13 @@ entries:
     urls:
     - https://github.com/samcday/charts/releases/download/vertical-pod-autoscaler-0.0.1/vertical-pod-autoscaler-0.0.1.tgz
     version: 0.0.1
-generated: "2024-08-08T11:25:00.988447189Z"
+  vertical-pod-autoscaler-crds:
+  - apiVersion: v2
+    created: "2024-08-17T12:54:55.541993821Z"
+    description: vertical-pod-autoscaler CRDs
+    digest: a1135dcafc4e3388e89f73567c6a4e3a3e0727f506ecb017701b5b3d23c9d0ab
+    name: vertical-pod-autoscaler-crds
+    urls:
+    - https://github.com/samcday/charts/releases/download/vertical-pod-autoscaler-crds-1.0.0/vertical-pod-autoscaler-crds-1.0.0.tgz
+    version: 1.0.0
+generated: "2024-08-17T12:54:55.542003229Z"
